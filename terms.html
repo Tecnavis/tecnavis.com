@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms & Conditions — Tecnavis</title>
+<meta name="description" content="Terms and conditions for using the websites and Android and iOS apps published by Tecnavis Web Solutions Pvt Ltd.">
+<meta name="theme-color" content="#0b0b24">
+<link rel="canonical" href="https://www.tecnavis.com/terms.html">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Legal pages: same brand world as the homepage, quieter. Reading column + sticky contents. */
+  --ink: #0b0b24; --ink-2: #12122f; --line: #2a2852; --text: #f2effa; --muted: #a7a3c4;
+  --violet: #c77dff; --gold: #f0c96b; --teal: #2de8d0;
+  --grad: linear-gradient(100deg, #e45fd9 0%, #a43cf5 55%, #8b1ff7 100%);
+  --font-display: "Archivo", "Arial Narrow", Arial, sans-serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--ink); color: var(--text); font-family: var(--font-body); font-size: 17px; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+a { color: var(--violet); }
+a:hover { color: var(--text); }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
+header.nav { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--ink) 88%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.nav-in { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 68px; }
+.logo img { height: 44px; width: auto; display: block; }
+.logo:focus, .logo:focus-visible { outline: none; }
+.nav-in nav { display: flex; gap: 22px; font-size: 15px; }
+.nav-in nav a { color: var(--muted); text-decoration: none; }
+.nav-in nav a:hover, .nav-in nav a[aria-current="page"] { color: var(--text); }
+@media (max-width: 640px) { .nav-in nav a.hide-sm { display: none; } .logo img { height: 36px; } }
+.hero { padding: clamp(48px, 7vw, 88px) 0 36px; border-bottom: 1px solid var(--line); }
+.eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--gold); text-transform: uppercase; letter-spacing: .14em; margin: 0 0 16px; }
+.eyebrow span { color: var(--muted); }
+h1 { font-family: var(--font-display); font-weight: 850; font-stretch: 120%; font-size: clamp(38px, 6vw, 72px); line-height: 1; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+.meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.meta span { font-family: var(--font-mono); font-size: 12.5px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+.meta b { color: var(--text); font-weight: 600; }
+.intro { color: var(--muted); max-width: 66ch; margin: 22px 0 0; font-size: 18px; }
+.layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(30px, 5vw, 70px); padding: 48px 0 90px; }
+@media (max-width: 860px) { .layout { grid-template-columns: 1fr; } .toc { position: static !important; } }
+.toc { position: sticky; top: 92px; align-self: start; font-size: 14.5px; }
+.toc p { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; counter-reset: t; border-left: 1px solid var(--line); }
+.toc li { counter-increment: t; }
+.toc a { display: block; padding: 5px 0 5px 14px; color: var(--muted); text-decoration: none; margin-left: -1px; border-left: 2px solid transparent; }
+.toc a::before { content: counter(t, decimal-leading-zero) "  "; font-family: var(--font-mono); font-size: 11px; color: var(--gold); }
+.toc a:hover { color: var(--text); border-left-color: var(--violet); }
+article { max-width: 72ch; }
+article section { padding: 6px 0 26px; scroll-margin-top: 90px; }
+article h2 { font-family: var(--font-display); font-stretch: 115%; font-weight: 780; font-size: clamp(22px, 2.6vw, 28px); line-height: 1.15; margin: 18px 0 10px; text-wrap: balance; }
+article h2 small { font-family: var(--font-mono); font-size: 12px; color: var(--gold); display: block; font-stretch: 100%; font-weight: 400; margin-bottom: 6px; letter-spacing: .1em; }
+article h3 { font-size: 17.5px; margin: 20px 0 6px; }
+article p, article li { color: #d9d4ea; }
+article ul { padding-left: 20px; }
+article li { margin: 4px 0; }
+article li::marker { color: var(--violet); }
+.table-wrap { overflow-x: auto; margin: 14px 0; border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; min-width: 560px; }
+th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; background: var(--ink-2); }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; color: var(--text); }
+.note { border: 1px solid var(--line); border-left: 3px solid var(--gold); background: var(--ink-2); border-radius: 10px; padding: 14px 18px; margin: 16px 0; font-size: 15.5px; }
+.note p { margin: 0; }
+.contact-card { border: 1px solid var(--line); border-radius: 16px; padding: 22px; background: var(--ink-2); display: grid; gap: 6px; }
+.contact-card b { font-family: var(--font-display); font-stretch: 115%; font-size: 19px; }
+.steps { counter-reset: s; list-style: none; padding: 0; display: grid; gap: 12px; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: start; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; background: var(--ink-2); }
+.steps li::before { content: counter(s); font-family: var(--font-display); font-weight: 800; font-size: 22px; color: var(--gold); line-height: 1.2; }
+form.req { display: grid; gap: 14px; border: 1px solid var(--line); border-radius: 18px; padding: clamp(18px, 3vw, 28px); background: var(--ink-2); margin-top: 16px; }
+.f2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 560px) { .f2 { grid-template-columns: 1fr; } }
+label { display: grid; gap: 6px; font-size: 13.5px; color: var(--muted); font-weight: 500; }
+input, select, textarea { font: inherit; font-size: 16px; color: var(--text); background: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 11px 13px; width: 100%; }
+textarea { min-height: 90px; resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--violet); }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 15.5px; border: 1px solid var(--line); color: var(--text); }
+.btn-main { background: var(--grad); border-color: transparent; color: #fff; box-shadow: inset 0 0 0 1px rgba(255,224,138,.45); }
+.btn-main:hover { color: #fff; filter: brightness(1.08); }
+.btn:hover { color: var(--text); border-color: var(--muted); }
+.fine { font-size: 13.5px; color: var(--muted); margin: 0; }
+footer { border-top: 1px solid var(--line); padding: 36px 0; color: var(--muted); font-size: 14px; }
+.foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: center; }
+.foot nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.foot a { color: var(--muted); text-decoration: none; }
+.foot a:hover, .foot a[aria-current="page"] { color: var(--text); }
+@media print { header.nav, .toc, footer, form.req { display: none; } body { background: #fff; color: #000; } article p, article li { color: #000; } .layout { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-in">
+  <a class="logo" href="index.html" aria-label="Tecnavis home"><img src="assets/logo-horizontal-white.png" alt="Tecnavis Web Solutions Pvt Ltd" width="149" height="44"></a>
+  <nav aria-label="Legal">
+    <a class="hide-sm" href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html" aria-current="page">Terms</a>
+    <a href="delete-account.html">Delete account</a>
+  </nav>
+</div></header>
+<main>
+
+<div class="hero"><div class="wrap">
+  <p class="eyebrow">Legal <span>/ Terms</span></p>
+  <h1>Terms &amp; Conditions</h1>
+  <div class="meta"><span>Effective <b>7 November 2026</b></span><span>Last updated <b>7 November 2026</b></span><span>Applies to <b>tecnavis.com · our apps</b></span></div>
+  <p class="intro">The rules for using our websites and apps: what you can expect from us, what we expect from you, and how payments, refunds and disputes work.</p>
+</div></div>
+<div class="wrap layout">
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#agreement">Agreement to these terms</a></li>
+      <li><a href="#eligibility">Eligibility and accounts</a></li>
+      <li><a href="#use">Acceptable use</a></li>
+      <li><a href="#content">Your content</a></li>
+      <li><a href="#marketplace">Marketplaces and third parties</a></li>
+      <li><a href="#payments">Payments, subscriptions and refunds</a></li>
+      <li><a href="#ip">Our intellectual property</a></li>
+      <li><a href="#availability">Availability and changes</a></li>
+      <li><a href="#disclaimer">Disclaimers</a></li>
+      <li><a href="#liability">Limitation of liability</a></li>
+      <li><a href="#indemnity">Indemnity</a></li>
+      <li><a href="#termination">Suspension and termination</a></li>
+      <li><a href="#apple">Apple App Store users</a></li>
+      <li><a href="#law">Governing law and disputes</a></li>
+      <li><a href="#changes">Changes to these terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+  <article>
+    <section id="agreement">
+      <h2><small>01</small>Agreement to these terms</h2>
+      <p>These Terms &amp; Conditions ("Terms") govern your use of the websites, mobile apps and software products published by <b>Tecnavis Web Solutions Pvt Ltd</b> ("Tecnavis", "we", "us"), including Apps on Google Play and the Apple App Store (together, the "Services"). By creating an account or using the Services, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the Services.</p>
+      <p>Some Apps have extra terms, such as booking, cancellation or seller rules, shown inside the App. Those add to these Terms. If they conflict, the App's own terms apply for that App.</p>
+    </section>
+    <section id="eligibility">
+      <h2><small>02</small>Eligibility and accounts</h2>
+      <ul>
+        <li>You must be at least 18, or use the Services with the consent and supervision of a parent or guardian.</li>
+        <li>Give accurate information and keep it up to date.</li>
+        <li>Keep your password and OTPs private. You are responsible for activity on your account.</li>
+        <li>Tell us at once at <a href="mailto:info@tecnavis.com">info@tecnavis.com</a> if you suspect unauthorised use.</li>
+        <li>If you register on behalf of a business, you confirm you are authorised to bind it to these Terms.</li>
+      </ul>
+    </section>
+    <section id="use">
+      <h2><small>03</small>Acceptable use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>break any law, or use the Services for fraud, harassment or spam;</li>
+        <li>post content that is false, misleading, infringing, obscene or harmful;</li>
+        <li>impersonate anyone or misrepresent your business, listings or prices;</li>
+        <li>try to access other users' accounts or data, or our systems, without permission;</li>
+        <li>reverse engineer, scrape, overload or disrupt the Services, or upload malware;</li>
+        <li>copy, resell or sublicense the Services without our written permission.</li>
+      </ul>
+    </section>
+    <section id="content">
+      <h2><small>04</small>Your content</h2>
+      <p>You keep ownership of content you upload, such as listings, photos and documents. You give Tecnavis a non-exclusive, worldwide, royalty-free licence to host, store, display and process it only to operate and improve the Services. You confirm you have the rights to everything you upload. We may remove content that breaks these Terms.</p>
+    </section>
+    <section id="marketplace">
+      <h2><small>05</small>Marketplaces and third parties</h2>
+      <p>Some Apps connect users with each other, for example customers with service providers, buyers with sellers, or shippers with transport owners. Unless the App clearly says otherwise:</p>
+      <ul>
+        <li>Tecnavis provides the platform and is <b>not a party</b> to agreements between users;</li>
+        <li>service providers and sellers are responsible for the quality, legality, safety and delivery of what they offer;</li>
+        <li>users should check details for themselves before paying or entering an agreement.</li>
+      </ul>
+      <p>We may help resolve disputes but are not obliged to.</p>
+    </section>
+    <section id="payments">
+      <h2><small>06</small>Payments, subscriptions and refunds</h2>
+      <ul>
+        <li>Prices are shown in the App before you pay and include or state applicable taxes such as GST or VAT.</li>
+        <li>Payments are processed by third-party gateways, or by Google Play or the App Store for in-app purchases, under their terms.</li>
+        <li>Subscriptions renew automatically until cancelled. Cancel in your store account settings or in the App, before the renewal date.</li>
+        <li>Refunds follow the policy shown in the App at purchase. Store purchases are refunded under Google's or Apple's refund rules. Nothing here limits refund rights you have under consumer law.</li>
+      </ul>
+    </section>
+    <section id="ip">
+      <h2><small>07</small>Our intellectual property</h2>
+      <p>The Services, including their software, design, logos and the Tecnavis name, belong to Tecnavis or its licensors. We grant you a personal, revocable, non-transferable licence to use the Apps on devices you own or control, in line with these Terms and the store's usage rules. Nothing else is licensed to you.</p>
+    </section>
+    <section id="availability">
+      <h2><small>08</small>Availability and changes</h2>
+      <p>We work to keep the Services available, but they may be interrupted for maintenance, updates or reasons outside our control. We may change, add or remove features. Keep the App updated, because older versions may stop working.</p>
+    </section>
+    <section id="disclaimer">
+      <h2><small>09</small>Disclaimers</h2>
+      <p>The Services are provided "as is" and "as available". To the extent the law allows, we disclaim implied warranties of merchantability, fitness for a particular purpose and non-infringement, and we do not guarantee that the Services will be error-free or uninterrupted. Information such as maps, distances or estimates is for guidance only.</p>
+    </section>
+    <section id="liability">
+      <h2><small>10</small>Limitation of liability</h2>
+      <p>To the extent the law allows, Tecnavis is not liable for indirect, incidental, special or consequential losses, or for loss of profits, data or business, arising from the Services. Our total liability for any claim is limited to the amount you paid us for the Service concerned in the 12 months before the claim, or INR 5,000, whichever is higher. Nothing in these Terms limits liability that cannot be limited by law, such as for fraud or for death or personal injury caused by negligence.</p>
+    </section>
+    <section id="indemnity">
+      <h2><small>11</small>Indemnity</h2>
+      <p>You agree to compensate Tecnavis for reasonable losses and costs, including legal fees, arising from your breach of these Terms, your content, or your dealings with other users.</p>
+    </section>
+    <section id="termination">
+      <h2><small>12</small>Suspension and termination</h2>
+      <p>You can stop using the Services and <a href="delete-account.html">delete your account</a> at any time. We may suspend or close accounts that break these Terms or the law, or that put other users at risk, with notice where reasonable. Sections that by their nature should survive termination, such as payments due, intellectual property, disclaimers and liability, continue to apply.</p>
+    </section>
+    <section id="apple">
+      <h2><small>13</small>Apple App Store users</h2>
+      <p>If you downloaded an App from the Apple App Store:</p>
+      <ul>
+        <li>these Terms are between you and Tecnavis, not Apple, and Tecnavis alone is responsible for the App and its content;</li>
+        <li>Apple has no obligation to provide maintenance or support for the App;</li>
+        <li>if the App fails to meet an applicable warranty, you may notify Apple and Apple will refund the purchase price, if any; Apple has no other warranty obligation;</li>
+        <li>Apple is not responsible for claims relating to the App, including product liability, legal or regulatory compliance, consumer protection or intellectual property claims;</li>
+        <li>you confirm you are not in a country under a US government embargo and are not on a US list of prohibited or restricted parties;</li>
+        <li>Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you.</li>
+      </ul>
+    </section>
+    <section id="law">
+      <h2><small>14</small>Governing law and disputes</h2>
+      <p>These Terms are governed by the laws of India. Contact us first so we can try to resolve any dispute informally within 30 days. If that fails, the courts at Malappuram, Kerala have jurisdiction. If you are a consumer in the EU, UK or GCC, you keep any protection the mandatory laws of your country give you.</p>
+    </section>
+    <section id="changes">
+      <h2><small>15</small>Changes to these terms</h2>
+      <p>We may update these Terms. We will change the "Last updated" date and, for material changes, notify you in the App or by email. If you keep using the Services after changes take effect, you accept them.</p>
+    </section>
+    <section id="contact">
+      <h2><small>16</small>Contact</h2>
+      <div class="contact-card">
+        <b>Tecnavis Web Solutions Pvt Ltd</b>
+        <span>Malappuram, Kerala 676505, India · Branch office: Kozhikode, Kerala</span>
+        <span>Email: <a href="mailto:info@tecnavis.com">info@tecnavis.com</a></span>
+        <span>Phone / WhatsApp: <a href="https://wa.me/916282414031">+91 62824 14031</a></span>
+        <span>Hours: Monday to Saturday, 9:30 to 18:00 IST</span>
+      </div>
+    </section>
+  </article>
+</div>
+</main>
+<footer><div class="wrap foot">
+  <span>© 2026 Tecnavis Web Solutions Pvt Ltd · Malappuram &amp; Kozhikode, Kerala, India</span>
+  <nav aria-label="Footer">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html" aria-current="page">Terms &amp; Conditions</a>
+    <a href="delete-account.html">Delete account</a>
+    <a href="mailto:info@tecnavis.com">info@tecnavis.com</a>
+  </nav>
+</div></footer>
+
+</body>
+</html>

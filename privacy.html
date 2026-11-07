@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Tecnavis</title>
+<meta name="description" content="How Tecnavis Web Solutions collects, uses and protects personal data in its websites and Android and iOS apps.">
+<meta name="theme-color" content="#0b0b24">
+<link rel="canonical" href="https://www.tecnavis.com/privacy.html">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Legal pages: same brand world as the homepage, quieter. Reading column + sticky contents. */
+  --ink: #0b0b24; --ink-2: #12122f; --line: #2a2852; --text: #f2effa; --muted: #a7a3c4;
+  --violet: #c77dff; --gold: #f0c96b; --teal: #2de8d0;
+  --grad: linear-gradient(100deg, #e45fd9 0%, #a43cf5 55%, #8b1ff7 100%);
+  --font-display: "Archivo", "Arial Narrow", Arial, sans-serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--ink); color: var(--text); font-family: var(--font-body); font-size: 17px; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+a { color: var(--violet); }
+a:hover { color: var(--text); }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
+header.nav { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--ink) 88%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.nav-in { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 68px; }
+.logo img { height: 44px; width: auto; display: block; }
+.logo:focus, .logo:focus-visible { outline: none; }
+.nav-in nav { display: flex; gap: 22px; font-size: 15px; }
+.nav-in nav a { color: var(--muted); text-decoration: none; }
+.nav-in nav a:hover, .nav-in nav a[aria-current="page"] { color: var(--text); }
+@media (max-width: 640px) { .nav-in nav a.hide-sm { display: none; } .logo img { height: 36px; } }
+.hero { padding: clamp(48px, 7vw, 88px) 0 36px; border-bottom: 1px solid var(--line); }
+.eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--gold); text-transform: uppercase; letter-spacing: .14em; margin: 0 0 16px; }
+.eyebrow span { color: var(--muted); }
+h1 { font-family: var(--font-display); font-weight: 850; font-stretch: 120%; font-size: clamp(38px, 6vw, 72px); line-height: 1; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+.meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.meta span { font-family: var(--font-mono); font-size: 12.5px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+.meta b { color: var(--text); font-weight: 600; }
+.intro { color: var(--muted); max-width: 66ch; margin: 22px 0 0; font-size: 18px; }
+.layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(30px, 5vw, 70px); padding: 48px 0 90px; }
+@media (max-width: 860px) { .layout { grid-template-columns: 1fr; } .toc { position: static !important; } }
+.toc { position: sticky; top: 92px; align-self: start; font-size: 14.5px; }
+.toc p { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; counter-reset: t; border-left: 1px solid var(--line); }
+.toc li { counter-increment: t; }
+.toc a { display: block; padding: 5px 0 5px 14px; color: var(--muted); text-decoration: none; margin-left: -1px; border-left: 2px solid transparent; }
+.toc a::before { content: counter(t, decimal-leading-zero) "  "; font-family: var(--font-mono); font-size: 11px; color: var(--gold); }
+.toc a:hover { color: var(--text); border-left-color: var(--violet); }
+article { max-width: 72ch; }
+article section { padding: 6px 0 26px; scroll-margin-top: 90px; }
+article h2 { font-family: var(--font-display); font-stretch: 115%; font-weight: 780; font-size: clamp(22px, 2.6vw, 28px); line-height: 1.15; margin: 18px 0 10px; text-wrap: balance; }
+article h2 small { font-family: var(--font-mono); font-size: 12px; color: var(--gold); display: block; font-stretch: 100%; font-weight: 400; margin-bottom: 6px; letter-spacing: .1em; }
+article h3 { font-size: 17.5px; margin: 20px 0 6px; }
+article p, article li { color: #d9d4ea; }
+article ul { padding-left: 20px; }
+article li { margin: 4px 0; }
+article li::marker { color: var(--violet); }
+.table-wrap { overflow-x: auto; margin: 14px 0; border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; min-width: 560px; }
+th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; background: var(--ink-2); }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; color: var(--text); }
+.note { border: 1px solid var(--line); border-left: 3px solid var(--gold); background: var(--ink-2); border-radius: 10px; padding: 14px 18px; margin: 16px 0; font-size: 15.5px; }
+.note p { margin: 0; }
+.contact-card { border: 1px solid var(--line); border-radius: 16px; padding: 22px; background: var(--ink-2); display: grid; gap: 6px; }
+.contact-card b { font-family: var(--font-display); font-stretch: 115%; font-size: 19px; }
+.steps { counter-reset: s; list-style: none; padding: 0; display: grid; gap: 12px; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: start; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; background: var(--ink-2); }
+.steps li::before { content: counter(s); font-family: var(--font-display); font-weight: 800; font-size: 22px; color: var(--gold); line-height: 1.2; }
+form.req { display: grid; gap: 14px; border: 1px solid var(--line); border-radius: 18px; padding: clamp(18px, 3vw, 28px); background: var(--ink-2); margin-top: 16px; }
+.f2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 560px) { .f2 { grid-template-columns: 1fr; } }
+label { display: grid; gap: 6px; font-size: 13.5px; color: var(--muted); font-weight: 500; }
+input, select, textarea { font: inherit; font-size: 16px; color: var(--text); background: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 11px 13px; width: 100%; }
+textarea { min-height: 90px; resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--violet); }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 15.5px; border: 1px solid var(--line); color: var(--text); }
+.btn-main { background: var(--grad); border-color: transparent; color: #fff; box-shadow: inset 0 0 0 1px rgba(255,224,138,.45); }
+.btn-main:hover { color: #fff; filter: brightness(1.08); }
+.btn:hover { color: var(--text); border-color: var(--muted); }
+.fine { font-size: 13.5px; color: var(--muted); margin: 0; }
+footer { border-top: 1px solid var(--line); padding: 36px 0; color: var(--muted); font-size: 14px; }
+.foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: center; }
+.foot nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.foot a { color: var(--muted); text-decoration: none; }
+.foot a:hover, .foot a[aria-current="page"] { color: var(--text); }
+@media print { header.nav, .toc, footer, form.req { display: none; } body { background: #fff; color: #000; } article p, article li { color: #000; } .layout { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-in">
+  <a class="logo" href="index.html" aria-label="Tecnavis home"><img src="assets/logo-horizontal-white.png" alt="Tecnavis Web Solutions Pvt Ltd" width="149" height="44"></a>
+  <nav aria-label="Legal">
+    <a class="hide-sm" href="index.html">Home</a>
+    <a href="privacy.html" aria-current="page">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete account</a>
+  </nav>
+</div></header>
+<main>
+
+<div class="hero"><div class="wrap">
+  <p class="eyebrow">Legal <span>/ Privacy</span></p>
+  <h1>Privacy Policy</h1>
+  <div class="meta"><span>Effective <b>7 November 2026</b></span><span>Last updated <b>7 November 2026</b></span><span>Applies to <b>tecnavis.com · our apps</b></span></div>
+  <p class="intro">Plain-language summary: we collect what our apps need to work, we never sell your data, and you can ask us to see or delete it at any time.</p>
+</div></div>
+<div class="wrap layout">
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#who">Who we are and what this covers</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#use">How we use your information</a></li>
+      <li><a href="#share">Who we share it with</a></li>
+      <li><a href="#permissions">App permissions</a></li>
+      <li><a href="#retention">How long we keep it</a></li>
+      <li><a href="#rights">Your rights and choices</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+  <article>
+    <section id="who">
+      <h2><small>01</small>Who we are and what this covers</h2>
+      <p>This Privacy Policy explains how <b>Tecnavis Web Solutions Pvt Ltd</b> ("Tecnavis", "we", "us") collects, uses, shares and protects personal data when you use:</p>
+      <ul>
+        <li>our websites, including <b>tecnavis.com</b> and <b>tecnavis.in</b>;</li>
+        <li>mobile apps that we publish on <b>Google Play</b> and the <b>Apple App Store</b> under the developer name Tecnavis Web Solutions Pvt Ltd, and their related web dashboards ("Apps");</li>
+        <li>our own software products, such as Tecnavis Platform.</li>
+      </ul>
+      <p>For personal data processed through these services, Tecnavis is the data controller (under India's Digital Personal Data Protection Act, 2023, the "data fiduciary").</p>
+      <div class="note"><p><b>Apps we build for clients.</b> If an app is published under a client's own developer account, that client is responsible for your data and its own privacy policy applies. Tecnavis then acts only as a service provider processing data on the client's instructions.</p></div>
+    </section>
+    <section id="collect">
+      <h2><small>02</small>Information we collect</h2>
+      <p>We collect only what an App or service needs to work. Not every App collects every item below; each store listing's data-safety section shows what that App collects.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Category</th><th>Examples</th><th>How we get it</th></tr></thead>
+        <tbody>
+          <tr><td>Account details</td><td>Name, phone number, email address, password (stored hashed), profile photo</td><td>You provide it when you sign up or edit your profile</td></tr>
+          <tr><td>Business and transaction data</td><td>Orders, bookings, listings, invoices, delivery addresses, payment status</td><td>Created as you use the App</td></tr>
+          <tr><td>Location</td><td>Precise or approximate location, for example to match nearby services, track a delivery or show a pickup point</td><td>From your device, only after you grant permission. Some driver or delivery apps use location in the background while you are on duty, and say so before asking</td></tr>
+          <tr><td>Photos and files</td><td>Images you upload (vehicle photos, product images, documents)</td><td>Only when you choose to upload them, using camera or storage permission</td></tr>
+          <tr><td>Device and usage data</td><td>Device model, operating system, app version, crash logs, IP address, pages or screens used</td><td>Collected automatically to keep the service secure and working</td></tr>
+          <tr><td>Messages and support</td><td>What you send us by email, WhatsApp, phone or contact forms</td><td>You provide it</td></tr>
+          <tr><td>Notification token</td><td>A push-notification identifier for your device</td><td>Generated by Firebase Cloud Messaging or Apple Push Notification service</td></tr>
+        </tbody>
+      </table></div>
+      <p>We do not collect your full card or bank details. Payments are handled directly by the payment gateway, which gives us only a payment reference and status.</p>
+    </section>
+    <section id="use">
+      <h2><small>03</small>How we use your information</h2>
+      <ul>
+        <li><b>To provide the service:</b> create and manage your account, process orders and bookings, connect you with other users where the App is a marketplace, and send transactional messages such as OTPs, confirmations and status updates.</li>
+        <li><b>To keep it secure:</b> verify identity, prevent fraud and abuse, and investigate misuse.</li>
+        <li><b>To support you:</b> answer questions and resolve problems.</li>
+        <li><b>To improve it:</b> fix crashes, measure performance and plan features, using aggregated or de-identified data where possible.</li>
+        <li><b>To communicate:</b> send service notices. We send promotional messages only where you have agreed, and you can opt out at any time.</li>
+        <li><b>To meet legal obligations:</b> tax, accounting and lawful requests from authorities.</li>
+      </ul>
+      <p>Where the GDPR or a similar law applies, our legal bases are: performing our contract with you, our legitimate interests (security and service improvement), your consent (such as location or marketing), and legal obligations.</p>
+      <p>We do <b>not</b> sell your personal data, and we do not use it for third-party advertising.</p>
+    </section>
+    <section id="share">
+      <h2><small>04</small>Who we share it with</h2>
+      <p>We share personal data only as needed to run the service:</p>
+      <ul>
+        <li><b>Other users of the same App</b>, when sharing is part of the service, for example a customer's name, phone and pickup point shown to the assigned driver.</li>
+        <li><b>Service providers</b> who process data for us under contract: cloud hosting, Google Firebase (authentication, push notifications, crash reporting), Google Maps Platform, SMS/OTP and email providers, and payment gateways such as Razorpay or Stripe.</li>
+        <li><b>Authorities</b>, when the law requires it or to protect the rights, property or safety of users or the public.</li>
+        <li><b>A buyer or successor</b>, if Tecnavis is involved in a merger or acquisition. Your data would stay protected by this policy.</li>
+      </ul>
+      <p>Third-party services have their own privacy policies, for example <a href="https://policies.google.com/privacy" rel="noopener">Google</a> and <a href="https://razorpay.com/privacy/" rel="noopener">Razorpay</a>.</p>
+    </section>
+    <section id="permissions">
+      <h2><small>05</small>App permissions</h2>
+      <p>Apps ask for device permissions only when a feature needs them, and you can withdraw them in your device settings at any time. Some features may then stop working.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Permission</th><th>Used for</th></tr></thead>
+        <tbody>
+          <tr><td>Location</td><td>Finding nearby services, navigation, live trip or delivery tracking</td></tr>
+          <tr><td>Camera / Photos</td><td>Uploading images and documents you choose</td></tr>
+          <tr><td>Notifications</td><td>Order, booking and account alerts</td></tr>
+          <tr><td>Phone</td><td>Calling the other party directly from the App, only when you tap to call</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+    <section id="retention">
+      <h2><small>06</small>How long we keep it</h2>
+      <p>We keep personal data while your account is active and for as long as needed to provide the service. When you delete your account, we delete or anonymise your personal data within <b>30 days</b>, except:</p>
+      <ul>
+        <li>invoices and transaction records we must keep for tax and accounting law (up to 8 years under Indian law);</li>
+        <li>data needed to resolve a dispute, prevent fraud or enforce our terms, kept only until that matter is closed;</li>
+        <li>backups, which are overwritten on a rolling cycle of up to 90 days.</li>
+      </ul>
+    </section>
+    <section id="rights">
+      <h2><small>07</small>Your rights and choices</h2>
+      <p>Depending on where you live, you can ask us to:</p>
+      <ul>
+        <li>access the personal data we hold about you and get a copy;</li>
+        <li>correct data that is wrong or incomplete;</li>
+        <li>delete your account and personal data (see <a href="delete-account.html">Delete account</a>);</li>
+        <li>withdraw consent, such as for location or marketing;</li>
+        <li>object to or restrict certain processing, and receive your data in a portable format (EU/UK);</li>
+        <li>nominate another person to exercise your rights if you die or become incapacitated (India).</li>
+      </ul>
+      <p>Email <a href="mailto:info@tecnavis.com">info@tecnavis.com</a> from the address or phone number linked to your account. We reply within 30 days. If you are not satisfied, you can complain to your local data protection authority, for example the Data Protection Board of India, an EU supervisory authority or the UK ICO.</p>
+    </section>
+    <section id="security">
+      <h2><small>08</small>Security</h2>
+      <p>We protect data with HTTPS/TLS encryption in transit, hashed passwords, access limited to staff who need it, and regular updates to our servers and dependencies. No system is completely secure. If a breach affects your personal data, we will notify you and the relevant authorities as the law requires.</p>
+    </section>
+    <section id="transfers">
+      <h2><small>09</small>International transfers</h2>
+      <p>Tecnavis is based in India and serves clients in the GCC, Europe and elsewhere. Your data may be stored or processed in India or in the countries where our hosting and service providers operate. Where EU or UK data leaves those regions, we rely on safeguards such as Standard Contractual Clauses.</p>
+    </section>
+    <section id="children">
+      <h2><small>10</small>Children</h2>
+      <p>Our services are not intended for children under 13, and we do not knowingly collect their data. Where an App is designed for students, such as an educational App, users under 18 must use it with the consent and supervision of a parent or guardian, and we do not use children's data for tracking or targeted advertising. If you believe a child has given us data without consent, contact us and we will delete it.</p>
+    </section>
+    <section id="changes">
+      <h2><small>11</small>Changes to this policy</h2>
+      <p>We may update this policy as our services or the law change. We will change the "Last updated" date above, and for significant changes we will notify you in the App or by email before they take effect.</p>
+    </section>
+    <section id="contact">
+      <h2><small>12</small>Contact us</h2>
+      <p>For any privacy question or request, contact our Grievance Officer:</p>
+      <div class="contact-card">
+        <b>Tecnavis Web Solutions Pvt Ltd</b>
+        <span>Malappuram, Kerala 676505, India · Branch office: Kozhikode, Kerala</span>
+        <span>Email: <a href="mailto:info@tecnavis.com">info@tecnavis.com</a></span>
+        <span>Phone / WhatsApp: <a href="https://wa.me/916282414031">+91 62824 14031</a></span>
+        <span>Hours: Monday to Saturday, 9:30 to 18:00 IST</span>
+      </div>
+    </section>
+  </article>
+</div>
+</main>
+<footer><div class="wrap foot">
+  <span>© 2026 Tecnavis Web Solutions Pvt Ltd · Malappuram &amp; Kozhikode, Kerala, India</span>
+  <nav aria-label="Footer">
+    <a href="index.html">Home</a>
+    <a href="privacy.html" aria-current="page">Privacy Policy</a>
+    <a href="terms.html">Terms &amp; Conditions</a>
+    <a href="delete-account.html">Delete account</a>
+    <a href="mailto:info@tecnavis.com">info@tecnavis.com</a>
+  </nav>
+</div></footer>
+
+</body>
+</html>
